@@ -12,6 +12,8 @@ aux_source_directory(./src ROOT_SRC)
 
 add_executable(AccountBook ${ROOT_SRC})
 
+# add_executable(AccountBook src/main.cpp src/sqlitehelper.cpp)
+
 target_link_libraries(AccountBook sqlite3)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
